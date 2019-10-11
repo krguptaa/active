@@ -26,8 +26,8 @@
   },
   "autoload": {
     "psr-4": {
-      "HieuLe\\Active\\": "src/",
-      "HieuLe\\ActiveTest\\": "tests/"
+      "Krgupta\\Active\\": "src/",
+      "Krgupta\\ActiveTest\\": "tests/"
     },
     "files": [
       "src/helpers.php"
