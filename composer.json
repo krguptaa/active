@@ -30,7 +30,7 @@
       "Krgupta\\ActiveTest\\": "tests/"
     },
     "files": [
-      "src/helpers.php"
+      "src/Helpers/helpers.php"
     ]
   },
   "minimum-stability": "dev",
@@ -38,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Krgupta\\Active\\ActiveServiceProvider"
+        "Krgupta\\Active\\Providers\\ActiveServiceProvider"
       ],
       "aliases": {
         "Active": "Krgupta\\Active\\Facades\\Active"

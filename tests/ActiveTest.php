@@ -527,7 +527,7 @@ class ActiveTest extends TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Krgupta\Active\ActiveServiceProvider::class,
+            \Krgupta\Active\Providers\ActiveServiceProvider::class,
         ];
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Krgupta\Active;
+namespace Krgupta\Active\Providers;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Routing\Events\RouteMatched;
