@@ -15,10 +15,10 @@ composer require krgupta/active
 Append this line to your `providers` array in `config/app.php`
 
 ```php
-krgupta\Active\ActiveServiceProvider::class,
+Krgupta\Active\ActiveServiceProvider::class,
 ```
 
 Append this line to your `aliases` array in `config/app.php`
 
 ```php
-'Active' => krgupta\Active\Facades\Active::class,
+'Active' => Krgupta\Active\Facades\Active::class,
