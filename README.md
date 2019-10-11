@@ -26,5 +26,5 @@ Append this line to your `aliases` array in `config/app.php`
 'Active' => Krgupta\Active\Facades\Active::class,
 
 
-## Contribute
+# Contribute
 You can contribute to this project, by just taking fork of it. We are open for suggestion and PRs. If you have any new suggestions or anything for that matter, contact me at webworldgk@gmail.com
