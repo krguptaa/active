@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package    Krgupta\Active
  * @author     Kamlesh Gutpa <webworldgk@gmail.com>
- * @version    1.0.0
+ * @version    1.1
  *
  */
 class Active

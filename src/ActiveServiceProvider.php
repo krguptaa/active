@@ -6,6 +6,10 @@ use Illuminate\Foundation\Application;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * @author Kamlesh Gupta <webworldgk@gmail.com>
+ */
+
 class ActiveServiceProvider extends ServiceProvider
 {
     /**
