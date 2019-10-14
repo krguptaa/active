@@ -5,6 +5,7 @@ namespace Krgupta\Active\Providers;
 use Illuminate\Foundation\Application;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;
+use Krgupta\Active\Active;
 
 /**
  * @author Kamlesh Gupta <webworldgk@gmail.com>
