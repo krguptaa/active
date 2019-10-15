@@ -64,7 +64,7 @@ class ActiveTest extends TestCase
 
     /**
      * @param Request $request
-     * @param   $result
+     * @param         $result
      *
      * @dataProvider provideGetActionTestData
      */
@@ -125,9 +125,8 @@ class ActiveTest extends TestCase
 
     /**
      * @param Request $request
-     * @param
-     *        $controllers
-     * @param         $result
+     * @param $controllers
+     * @param $result
      *
      * @dataProvider provideCheckControllerTestData
      */

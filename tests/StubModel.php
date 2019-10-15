@@ -8,5 +8,4 @@ class StubModel extends Model
 {
     protected $fillable = ['id', 'uid'];
     protected $primaryKey = 'uid';
-
 }

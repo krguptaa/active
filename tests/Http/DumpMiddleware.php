@@ -18,5 +18,4 @@ class DumpMiddleware
     {
         return '';
     }
-
 }
