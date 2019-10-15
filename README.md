@@ -1,44 +1,32 @@
-Active for Laravel
+Active for Laravel 4/5
 ======
-Library is based on https://github.com/letrunghieu/active
-
-The helper class for Laravel applications (L4,L5 and L6) to get active class base on current url.
-
-We are using this package in this repository (https://github.com/viralsolani/laravel-adminpanel) as core package.
-
-This README file is written for the new `6.x` version of this package, which is compatible with the Laravel 6 only.
-
-  * If you are using Laravel 4, see the [`4.x` versions](https://github.com/krguptaa/active/tree/laravel_5.4).
-  * If you are using Laravel 5, see the [`5.x` versions](https://github.com/krguptaa/active/tree/laravel_5.5)
-
+The helper class for Laravel 4/5 applications to get active class base on current route.
 ## Installation
 
-Require this package as your dependencies:
+Add this package to your `composer.json` file and run `composer update` once.
+
+For Laravel 5
 
 ```
-composer require krgupta/active
+"krgupta/active": "~2.0"
 ```
+
+or for Laravel 4
+
+```
+"krgupta/active": "~1.0"
+```
+
+If you use this package in Laravel, the most suitable version will be selected base on the version of Laravel package.
 
 Append this line to your `providers` array in `config/app.php`
 
 ```php
-Krgupta\Active\Providers\ActiveServiceProvider::class,
+'Krgupta\Active\ActiveServiceProvider',
 ```
 
 Append this line to your `aliases` array in `config/app.php`
 
 ```php
-'Active' => Krgupta\Active\Facades\Active::class,
+'Active' => 'Krgupta\Active\Facades\Active',
 ```
-
-# Contribute
-You can contribute to this project, by just taking fork of it. We are open for suggestion and PRs. If you have any new suggestions or anything for that matter, contact me at webworldgk@gmail.com
-
-## Changelog:
-
-* v6.0: support Laravel 6 and PHPUnit 8
-* v5.5: support Laravel 5.5.x and PHPUnit 6
-* v5.4: support Laravel 5.4.x
-* v5.3: support Laravel 5.3.x
-* v5.2: support Laravel 5.1.x
-* v5.1: support Laravel 5.1.x
