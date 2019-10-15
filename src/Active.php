@@ -206,7 +206,7 @@ class Active
 
         $routeName = $this->route->getName();
 
-        if (in_array($routeName, (array)$routeNames)) {
+        if (in_array($routeName, (array) $routeNames)) {
             return true;
         }
 
@@ -279,7 +279,7 @@ class Active
             return false;
         }
 
-        if (in_array($this->action, (array)$actions)) {
+        if (in_array($this->action, (array) $actions)) {
             return true;
         }
 
@@ -299,7 +299,7 @@ class Active
             return false;
         }
 
-        if (in_array($this->controller, (array)$controllers)) {
+        if (in_array($this->controller, (array) $controllers)) {
             return true;
         }
 
