@@ -7,10 +7,11 @@ use Closure;
 class DumpMiddleware
 {
     /**
-     * Run the request filter.
+     * Run the request filters.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
+     *
      * @return mixed
      */
     public function handle($request, Closure $next)

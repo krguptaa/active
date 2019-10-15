@@ -6,6 +6,11 @@ The helper class for Laravel applications (L4,L5 and L6) to get active class bas
 
 We are using this package in this repository (https://github.com/viralsolani/laravel-adminpanel) as core package.
 
+This README file is written for the new `6.x` version of this package, which is compatible with the Laravel 6 only.
+
+  * If you are using Laravel 4, see the [`4.x` versions](https://github.com/krguptaa/active/tree/laravel_5.4).
+  * If you are using Laravel 5, see the [`5.x` versions](https://github.com/krguptaa/active/tree/laravel_5.5)
+
 ## Installation
 
 Require this package as your dependencies:

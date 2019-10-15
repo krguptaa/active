@@ -10,7 +10,6 @@ use Krgupta\Active\Active;
 /**
  * @author Kamlesh Gupta <webworldgk@gmail.com>
  */
-
 class ActiveServiceProvider extends ServiceProvider
 {
     /**
