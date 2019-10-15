@@ -2,10 +2,10 @@
 
 namespace Krgupta\ActiveTest;
 
-use Krgupta\Active\Active;
-use Illuminate\Http\Request;
-use Orchestra\Testbench\TestCase;
 use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
+use Illuminate\Http\Request;
+use Krgupta\Active\Active;
+use Orchestra\Testbench\TestCase;
 
 class ActiveTest extends TestCase
 {
@@ -23,7 +23,7 @@ class ActiveTest extends TestCase
                 ['as' => 'foo.bar.view', 'uses' => '\Krgupta\ActiveTest\Http\DumpController@viewMethod']
             );
             app('router')->get('/home', [
-                'as' => 'home',
+                'as'   => 'home',
                 'uses' => function () {
                 },
             ]);
@@ -64,7 +64,7 @@ class ActiveTest extends TestCase
 
     /**
      * @param Request $request
-     * @param         $result
+     * @param   $result
      *
      * @dataProvider provideGetActionTestData
      */
