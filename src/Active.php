@@ -2,13 +2,13 @@
 
 namespace Krgupta\Active;
 
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 /**
- * Return "active" class for the current route if needed
+ * Return "active" class for the current route if needed.
  *
  * Check the current route to decide whether return an "active" class base on:
  * <ul>
@@ -18,50 +18,49 @@ use Illuminate\Database\Eloquent\Model;
  *   <li>current controller</li>
  * </ul>
  *
- * @package    Krgupta\Active
  * @author     Kamlesh Gutpa <webworldgk@gmail.com>
- * @version    1.1
  *
+ * @version    1.1
  */
 class Active
 {
     /**
-     * Current request
+     * Current request.
      *
      * @var Request
      */
     protected $request;
 
     /**
-     * Current matched route
+     * Current matched route.
      *
      * @var Route
      */
     protected $route;
 
     /**
-     * Current action string
+     * Current action string.
      *
      * @var string
      */
     protected $action;
 
     /**
-     * Current controller class
+     * Current controller class.
      *
      * @var string
      */
     protected $controller;
 
     /**
-     * Current controller method
+     * Current controller method.
      *
      * @var string
      */
     protected $method;
 
     /**
-     * Current URI
+     * Current URI.
      *
      * @var string
      */
@@ -78,7 +77,7 @@ class Active
     }
 
     /**
-     * Update the route and request instances
+     * Update the route and request instances.
      *
      * @param Route   $route
      * @param Request $request
@@ -101,7 +100,7 @@ class Active
     }
 
     /**
-     * Get the active class if the condition is not falsy
+     * Get the active class if the condition is not falsy.
      *
      * @param        $condition
      * @param string $activeClass
@@ -115,7 +114,7 @@ class Active
     }
 
     /**
-     * Check if the URI of the current request matches one of the specific URIs
+     * Check if the URI of the current request matches one of the specific URIs.
      *
      * @param array|string $uris
      *
@@ -127,7 +126,7 @@ class Active
             return false;
         }
 
-        foreach ((array)$uris as $uri) {
+        foreach ((array) $uris as $uri) {
             if ($this->uri == $uri) {
                 return true;
             }
@@ -137,7 +136,7 @@ class Active
     }
 
     /**
-     * Check if the current URI matches one of specific patterns (using `Str::is`)
+     * Check if the current URI matches one of specific patterns (using `Str::is`).
      *
      * @param array|string $patterns
      *
@@ -149,7 +148,7 @@ class Active
             return false;
         }
 
-        foreach ((array)$patterns as $p) {
+        foreach ((array) $patterns as $p) {
             if (Str::is($p, $this->uri)) {
                 return true;
             }
@@ -163,7 +162,7 @@ class Active
      * + the value of $value is `false` and the current querystring contain the key $key
      * + the value of $value is not `false` and the current value of the $key key in the querystring equals to $value
      * + the value of $value is not `false` and the current value of the $key key in the querystring is an array that
-     * contains the $value
+     * contains the $value.
      *
      * @param string $key
      * @param mixed  $value
@@ -193,7 +192,7 @@ class Active
     }
 
     /**
-     * Check if the name of the current route matches one of specific values
+     * Check if the name of the current route matches one of specific values.
      *
      * @param array|string $routeNames
      *
@@ -215,7 +214,7 @@ class Active
     }
 
     /**
-     * Check the current route name with one or some patterns
+     * Check the current route name with one or some patterns.
      *
      * @param array|string $patterns
      *
@@ -233,7 +232,7 @@ class Active
             return in_array(null, $patterns);
         }
 
-        foreach ((array)$patterns as $p) {
+        foreach ((array) $patterns as $p) {
             if (Str::is($p, $routeName)) {
                 return true;
             }
@@ -243,7 +242,7 @@ class Active
     }
 
     /**
-     * Check if the parameter of the current route has the correct value
+     * Check if the parameter of the current route has the correct value.
      *
      * @param $param
      * @param $value
@@ -268,7 +267,7 @@ class Active
     }
 
     /**
-     * Return 'active' class if current route action match one of provided action names
+     * Return 'active' class if current route action match one of provided action names.
      *
      * @param array|string $actions
      *
@@ -288,7 +287,7 @@ class Active
     }
 
     /**
-     * Check if the current controller class matches one of specific values
+     * Check if the current controller class matches one of specific values.
      *
      * @param array|string $controllers
      *
@@ -308,7 +307,7 @@ class Active
     }
 
     /**
-     * Get the current controller method
+     * Get the current controller method.
      *
      * @return string
      */
@@ -318,7 +317,7 @@ class Active
     }
 
     /**
-     * Get the current action string
+     * Get the current action string.
      *
      * @return string
      */
@@ -328,7 +327,7 @@ class Active
     }
 
     /**
-     * Get the current controller class
+     * Get the current controller class.
      *
      * @return string
      */

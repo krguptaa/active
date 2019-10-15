@@ -5,7 +5,7 @@ namespace Krgupta\Active\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Active facade class
+ * Active facade class.
  *
  * @author Kamlesh Gupta
  */
