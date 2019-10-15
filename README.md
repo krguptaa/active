@@ -2,14 +2,12 @@ Active for Laravel
 ======
 Library is based on https://github.com/letrunghieu/active
 
-The helper class for Laravel applications (L4,L5 and L6) to get active class base on current url.
+The helper class for Laravel applications (both L4 and L5) to get active class base on current url.
 
-We are using this package in this repository (https://github.com/viralsolani/laravel-adminpanel) as core package.
+This README file is written for the new `v3.x` version of this package, which is compatible with the Laravel 5 only.
 
-This README file is written for the new `6.x` version of this package, which is compatible with the Laravel 6 only.
-
-  * If you are using Laravel 4, see the [`4.x` versions](https://github.com/krguptaa/active/tree/laravel_5.4).
-  * If you are using Laravel 5, see the [`5.x` versions](https://github.com/krguptaa/active/tree/laravel_5.5)
+  * If you are using Laravel 4, see the [`v1.x` versions](https://github.com/krguptaa/active/tree/v1.x).
+  * If you are using Laravel 5 with the legacy `v2.x` version of this package, you can give a try with the `v3.x` version (whose API is changed totally) or continue with the [`v2.x` version](https://github.com/krguptaa/active/tree/v2.x).
 
 ## Installation
 
@@ -22,7 +20,7 @@ composer require krgupta/active
 Append this line to your `providers` array in `config/app.php`
 
 ```php
-Krgupta\Active\Providers\ActiveServiceProvider::class,
+Krgupta\Active\ActiveServiceProvider::class,
 ```
 
 Append this line to your `aliases` array in `config/app.php`

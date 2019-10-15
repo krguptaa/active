@@ -1,17 +1,14 @@
 <?php
 
-namespace Krgupta\Active\Providers;
+namespace Krgupta\Active;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;
-use Krgupta\Active\Active;
 
-/**
- * @author Kamlesh Gupta <webworldgk@gmail.com>
- */
 class ActiveServiceProvider extends ServiceProvider
 {
+
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -48,10 +45,12 @@ class ActiveServiceProvider extends ServiceProvider
         $this->app->singleton(
             'active',
             function ($app) {
+
                 $instance = new Active($app['router']->getCurrentRequest());
 
                 return $instance;
             }
         );
     }
+
 }
