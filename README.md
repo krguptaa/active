@@ -28,3 +28,12 @@ Append this line to your `aliases` array in `config/app.php`
 
 # Contribute
 You can contribute to this project, by just taking fork of it. We are open for suggestion and PRs. If you have any new suggestions or anything for that matter, contact me at webworldgk@gmail.com
+
+## Changelog:
+
+* v6.0: support Laravel 6 and PHPUnit 8
+* v5.5: support Laravel 5.5.x and PHPUnit 6
+* v5.4: support Laravel 5.4.x
+* v5.3: support Laravel 5.3.x
+* v5.2: support Laravel 5.1.x
+* v5.1: support Laravel 5.1.x
