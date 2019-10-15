@@ -9,7 +9,7 @@ We are using this package in this repository (https://github.com/viralsolani/lar
 This README file is written for the new `6.x` version of this package, which is compatible with the Laravel 6 only.
 
   * If you are using Laravel 4, see the [`4.x` versions](https://github.com/krguptaa/active/tree/v2.x).
-  * If you are using Laravel 5, see the [`5.x` versions](https://github.com/krguptaa/active/tree/v3.x)
+  * If you are using Laravel 5, see the [`5.x` versions](https://github.com/krguptaa/active/tree/v3.x).
 
 ## Installation
 
